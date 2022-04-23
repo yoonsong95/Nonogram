@@ -1,0 +1,43 @@
+.container {
+    font-family: system-ui;
+}
+
+.row {
+    display: flex;
+}
+
+.block {
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+}
+
+.block+.block {
+    border-left: 0;
+}
+
+.nums-area {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-nums-area {
+    width: 100px;
+    align-items: center;
+}
+
+.row-nums-area {
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-nums-area p {
+    margin: 0px;
+}
+
+
+.pic-area {
+    background-color: white;
+}
