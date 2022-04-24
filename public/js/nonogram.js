@@ -1,6 +1,7 @@
 // rule 1: have rows & cols with 0 be the number keeping areas (the pattern of blocks numbers)
 // rule 2: single clicks to paint, double clicks to flag
 
+
 // sample pic coordinates
 // 4 x 4
 var samplePicMatrix4x4_1 = [
@@ -45,7 +46,6 @@ $(document).ready(function () {
     function refreshGrid() {
         $(".pic-area").css("background-color", "white");
     }
-
 
     function rotateMatrixSpecial(matrix) {
         var tempMatrix = [];
@@ -121,9 +121,6 @@ $(document).ready(function () {
     // TODO
     // actual validation of whether got the image correct
 
-
-    // actual code
-
     // grid
     var grid = createGrid(9, 9);
     $("#grid-container").html(grid);
@@ -132,7 +129,6 @@ $(document).ready(function () {
     addColNumsAreaClass(9);
     addRowNumsAreaClass(9);
     displayNumsAreas(calculateNumsArea(samplePicMatrix8x8_1));
-
 
     // pic area
     $(".pic-area").on("click", function () {
@@ -147,7 +143,5 @@ $(document).ready(function () {
     $("#refreshButton").on("click", function () {
         refreshGrid();
     });
-
-
 
 });
